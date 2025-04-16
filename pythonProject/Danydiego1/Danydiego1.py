@@ -1,0 +1,4 @@
+import maioridade
+
+
+maioridade.maioridade()

@@ -1,0 +1,6 @@
+import joblib, ast
+from sklearn.feature_extraction.text import TfidfVectorizer
+from pre_processamento import normalizar_texto,stematizar_texto
+import nltk
+import numpy as np
+
