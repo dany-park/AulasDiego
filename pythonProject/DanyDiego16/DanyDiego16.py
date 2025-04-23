@@ -5,5 +5,5 @@
 criar um repositorio vazio no github e depois...
 
  GIT push
-Git Clone
+Git Clone + endereço do repositorio em ssh
  GIT pull'''
