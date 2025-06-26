@@ -27,4 +27,4 @@ agenda.listar_contatos()
 
 #programa principal
 
-# CRIAR MENU - LIÇÃO DE CASA
+# CRIAR MENU - LIÇÃO DE CASA - tentar incluir o tratamento de erro
