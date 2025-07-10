@@ -2,7 +2,7 @@ class Cofre:
     def __init__(self,senha,item):
         self.__senha = senha
         self.__item = item
-        self.i = 0
+        self.tentativa = 0
 
     def __getItemAbrir(self):
         return self.__item
@@ -11,16 +11,18 @@ class Cofre:
           if senha == self.__senha:
               return self.__getItemAbrir()
           else:
-              self.i += 1
-              print("senha inválida")
+              self.tentativa += 1
+              print(f"senha incorreta {3-self.tentativa} restantes")
 
     def tentativas(self):
-        while self.i<=3:
+        while True:
             item_final = self.__tentar_abrir(input("digite o código: "))
-            return item_final
-
-        else:
-            print("tentativas esgotadas")
+            if self.tentativa < 3 and item_final!= None:
+                print(item_final)
+            elif self.tentativa < 3 and item_final== None:
+                print("tente novamente")
+            else:
+                print("Cofre Bloqueado")
 
     def alterar_senha(self,senha_atual,senha_nova):
         if senha_atual == self.__senha: #sempre perguntar: é o atributo (self.) ou o (parametro)
