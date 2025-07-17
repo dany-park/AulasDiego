@@ -9,6 +9,7 @@ class Cofre:
 
     def __tentar_abrir(self,senha):
           if senha == self.__senha:
+              self.tentativa = 0
               return self.__getItemAbrir()
           else:
               self.tentativa += 1
