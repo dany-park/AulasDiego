@@ -45,7 +45,13 @@ playlist2.adicionar(musica2)
 playlist2.adicionar(musica3)
 print(playlist2)
 print(len(playlist2))
-print(playlist2 + playlist1)
+playlist3 = playlist2 + playlist1
+print(playlist3)
+musica4 = Musica("hino","corinthians",100)
+playlist4 = Playlist("Futebol")
+playlist4.adicionar(musica4)
+playlist5 = playlist3 + playlist4
+print(playlist5)
 # --add
 # len
 # mistura de playlist
