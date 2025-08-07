@@ -10,16 +10,16 @@ class Impressora:
         self.cartucho = cartucho
 
     def imprimir(self,texto):
-        if cartucho.nivel > 10:
+        if self.cartucho.nivel > 10:
 
-            cartucho.nivel -= 10
+            self.cartucho.nivel -= 10
             print(f"imprimindo: {texto}")
-            print(f"tinta restante: {cartucho.nivel}")
+            print(f"tinta restante: {self.cartucho.nivel}")
         else:
             print("Atençao nível de tinta abaixo de 10")
 
-cartucho = Cartucho("preto", 100)
-epson = Impressora("hp", "cartucho")
+cartucho1 = Cartucho("preto", 100)
+epson = Impressora("hp", cartucho1)
 epson.imprimir("Olá, mundo!")
 epson.imprimir("Olá, mundo!")
 epson.imprimir("Olá, mundo!")
