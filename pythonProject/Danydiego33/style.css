@@ -1,0 +1,19 @@
+h1 {
+    color: blue;
+    }
+
+h2 {
+    color: red;
+    }
+
+.purple {
+    color: purple;
+    }
+
+#crazy {
+    color: orange;
+    }
+
+ul.lista_fav a {
+  color: green;
+}
