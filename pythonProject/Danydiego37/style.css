@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(180deg, rgb(0, 150, 180) 0%, rgb(0, 100, 150) 100%);
+  width: 100vw;
+  height: 100vh;
+  }
+
+img {
+  width: 200px;
+  animation: nadar-esq-dir 15s infinite alternate;
+}
+
+@keyframes nadar-esq-dir {
+from {transform: translateX(-100px);
+}
+to {transform: translateX(100vw) scaleX(-1);
+}
+}
