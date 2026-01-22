@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(180deg, rgb(0, 150, 180) 0%, rgb(0, 100, 150) 100%);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  }
+
+img {
+  width: 200px;
+  display:block;
+  }
+
+.skate1 {
+animation: nadar-esq-dir 10s infinite;
+}
+
+.skate2 {
+animation: nadar-em-v 20s infinite;
+}
+
+.skate3 {
+animation: nadar-dir-esq 10s infinite;
+}
+
+.skate4 {
+animation: nadar-esq-dir 05s infinite;
+}
+
+.skate5 {
+animation: nadar-em-v-contra 20s infinite;
+}
+
+.skate6 {
+animation: pirueta 20s infinite;
+}
+
+.bolhas{
+animation: bolhas-subindo 10s infinite;
+opacity: 0.9;
+}
+
+@keyframes nadar-esq-dir {
+from {transform: translateX(-100px) translateY(300px);
+}
+to {transform: translateX(100vw) translateY(400px) rotate(15deg);
+}
+}
+
+@keyframes nadar-dir-esq {
+from {transform: translateX(100vw) translateY(400px)translateX(-100px) translateY(300px);
+}
+to {transform: translateX(-100px) translateY(300px) rotate(15deg);
+}
+}
+
+@keyframes nadar-em-v {
+0% {transform: translateX(-200px) translateY(100px);
+}
+50% {transform: translateX(50vw) translateY(800px) rotate(40deg);
+}
+100% {transform: translateX(100vw) translateY(100px) rotate(-40deg);
+}
+}
+
+@keyframes nadar-em-v-contra {
+0% {transform: transform: translateX(100vw) translateY(100px);
+}
+50% {transform: translateX(50vw) translateY(800px) rotate(40deg);
+}
+100% {transform: translateX(-200px) translateY(100px) rotate(-40deg);
+}
+}
+
+@keyframes pirueta {
+0% {transform: transform: translateX(100vw) translateY(100px);
+}
+50% {transform: translateX(50vw) translateY(800px) rotate(40deg);
+}
+100% {transform: translateX(-200px) translateY(100px) rotate(-100deg);
+}
+}
+
+@keyframes bolhas-subindo {
+ from {transform: translateX(50vw) translateY(50vh);
+ }
+ to {transform: translateX(50vw) translateY(-800px);
+ }
+ }
