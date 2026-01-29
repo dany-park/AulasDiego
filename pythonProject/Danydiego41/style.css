@@ -1,0 +1,23 @@
+.magico {
+width: 200px;
+height: 400px;
+}
+
+.bau {
+width: 100px;
+height: 200px;
+}
+
+p {
+display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+.bau {
+display: none
+}
+p {
+display: block
+}
+}
